@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bd list:*)",
+      "Bash(bd ready:*)",
+      "Skill(beads:beads)",
+      "Bash(bd label add:*)",
+      "Bash(bd update:*)",
+      "Bash(bd:*)",
+      "mcp__pal__chat",
+      "Bash(ls -la \"D:\\\\Development\\\\pet-projects\\\\_bmad-output\\\\brainstorming\"\" 2>&1 || echo \"Directory does not exist \")"
+    ]
+  },
+  "spinnerTipsEnabled": false
+}
