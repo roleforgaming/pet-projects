@@ -454,3 +454,81 @@ MVP is complete when:
 - Risk level: LOW (all risks understood and mitigatable)
 
 **Key Success Factor:** Disciplined adherence to immutable state updates and thorough edge case testing per layer.
+
+---
+
+## Session Continuation: Customer Journey Mapping (Feb 13, 2026)
+
+### Context
+Brainstorming session continued to map end-to-end UX flows for core workflows (beat creation, editing, scene organization, annotations, flow mode, error recovery). PAL generated 50+ micro-interaction patterns. Validated against ADHD-first design principles through challenge protocol.
+
+### Key Validations from Savannah
+
+#### 1. **Keyboard-First UI (VALIDATED)**
+- ✅ Keyboard shortcuts ARE essential; minimizes mouse dependency
+- ✅ Double Return (not Cmd+N) to create new beat = more natural
+- ✅ Keyboard shortcuts DO feel natural when focused
+- ⚠️ Need to refine double Return behavior at scene boundaries
+
+#### 2. **Feedback Model: Visual-Only (VALIDATED)**
+- ✅ NO audio feedback (startle risk breaks flow)
+- ✅ NO haptic feedback (unnecessary)
+- ✅ Visual feedback IS sufficient
+- ✅ Pet celebrations must be silent/visual-only
+
+#### 3. **Annotation Toggles (REFINED)**
+- ✅ Three explicit modes: View → Minimize → Hide
+- **View mode:** Annotations always visible; NO auto-close
+- **Minimize mode:** Annotations collapse to badges; visible unless toggled
+- **Hide mode:** Annotations completely hidden; searchable via Phase 1B filter
+- ✅ Functional clutter is good; empty space is bad
+- ✅ Annotations are for research/editing, not real-time reference
+
+#### 4. **Scene Navigation (VALIDATED)**
+- ✅ Color + text labels reduce cognitive load
+- ✅ Black/Blue/Green/Red act convention works
+- ✅ Easy to register and navigate at scale
+
+#### 5. **Error Recovery (SIMPLIFIED)**
+- ✅ Simple "Recover draft? Yes/No" modal (no complex options)
+- 📅 Snapshots + diff tracking = Phase 2+ backlog
+- 📅 Automated backups = Phase 2+ backlog
+
+#### 6. **DnD Animation (CURSOR-SYNCED)**
+- ✅ Zero lag required: beat must move WITH cursor, not lag behind
+- ✅ Animation fine only if beat stays in visual sync
+- ✅ Discard beats that fall behind cursor = visual distraction
+
+### Additional Gaps Identified & Validated
+
+| Gap | Validation | Action |
+|---|---|---|
+| **Last-edited beat pin** | ✅ CRITICAL | Implement Ctrl+Home jump; pin in sidebar |
+| **Status badge visibility setting** | ✅ NEEDED | Make toggleable; not always-on |
+| **Persistent breadcrumb** | ✅ NEEDED | Show Project > Scene > Beat at all times |
+| **Strict undo/redo semantics** | ✅ NEEDED | Multi-beat moves = atomic undo |
+| **Annotation type icons + colors** | ✅ NEEDED | Distinguish types at a glance (📝 Note, 📖 Synopsis, 👤 Character, etc.) |
+| **Save history log** | ✅ NICE-TO-HAVE | Track persisted changes (Phase 1B+) |
+
+### Deliverables
+
+✅ **Comprehensive UX Specification:** `_bmad-output/ux-specification-phase-1a-refined.md`
+- 10 detailed sections covering all core workflows
+- Keyboard shortcuts table with behaviors
+- Annotation toggle semantics (View/Minimize/Hide)
+- Beat tracking (last-edited pin + breadcrumb)
+- DnD cursor-sync requirements
+- Undo/redo atomic semantics
+- Error recovery flow
+- Save architecture (autosave + visual indicators)
+- Implementation checklist (30+ items)
+
+### Session Status
+**✅ COMPLETE** – UX specification validated & ready for implementation
+
+---
+
+**Session Artifacts:**
+- Brainstorming findings: This document
+- Refined UX Specification: `_bmad-output/ux-specification-phase-1a-refined.md`
+- Beads tracking: pet-projects-daq (closed), pet-projects-6o8 (Phase 1A UX Spec)
