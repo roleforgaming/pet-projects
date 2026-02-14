@@ -8,7 +8,12 @@
       "Bash(bd update:*)",
       "Bash(bd:*)",
       "mcp__pal__chat",
-      "Bash(ls -la \"D:\\\\Development\\\\pet-projects\\\\_bmad-output\\\\brainstorming\"\" 2>&1 || echo \"Directory does not exist \")"
+      "Bash(ls -la \"D:\\\\Development\\\\pet-projects\\\\_bmad-output\\\\brainstorming\"\" 2>&1 || echo \"Directory does not exist \")",
+      "mcp__pal__thinkdeep",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "mcp__pal__consensus"
     ]
   },
   "spinnerTipsEnabled": false
