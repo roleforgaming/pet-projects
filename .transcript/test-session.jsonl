@@ -1,0 +1,2 @@
+{"type":"message","message":{"role":"assistant","content":[{"type":"text","text":"Starting test"}]}}
+{"type":"message","message":{"role":"assistant","content":[{"type":"tool_use","id":"test-tool-123","name":"bash","input":{"command":"echo test"}}]}}
